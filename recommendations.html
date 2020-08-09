@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	  <script src="script.js" defer></script>
+  </head>
+  <body>
+
+    <nav class="nav">
+    <img src="logo.png" class="logo"> 
+    <button class="navButton"><a href="index.html">HOME</a></button>
+    <button class="navButton"><a href="random.html">INSTANT CURE</a></button>
+    <button class="navButton"><a href="recommendations.html">PERSONALIZED</a></button>
+    <div class="dropdown">
+      <button class="dropbtn navButton">DAILY DOSE</button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="activities.html">ACTIVITIES</a>
+        <a href="fitness.html">WORKOUT</a>
+        <a href="sports.html">SPORTS</a>
+        <a href="language.html">LANGUAGE</a>
+      </div>
+    </div>  
+    <button class="navButton"><a href = "donate.html">COVID RELIEF</a></button>
+    <button class="navButton creatorButton"><a href="about.html">CREATORS</a></button>
+    </nav><br>
+
+    <h1 id="header">Personalized Recommendations</h1>
+
+    <div class="movies">
+      <h2 class="subheading">Movies</h2>
+      <container class="moviesContainer"></container><br>
+      <button class="moviesButton">Click Me!</button>
+    </div>
+
+    <div class="music">
+      <h2 class="subheading">Music</h2>
+      <container class="musicContainer"></container><br>
+      <button class="musicButton">Click Me!</button>
+      
+
+<form id="form" action="/action_page.php">
+  What genre are you looking for? <select id="mySelect">
+<option>acoustic</option>
+<option>afrobeat</option>
+<option>alt-rock</option>
+<option>alternative</option>
+<option>ambient</option>
+<option>anime</option>
+<option>black-metal</option>
+<option>bluegrass</option>
+<option>blues</option>
+<option>bossanova</option>
+<option>brazil</option>
+<option>breakbeat</option> 
+<option>british</option> 
+<option>cantopop</option> 
+<option>chicago-house</option> <option>children</option> <option>chill</option> <option>classical</option> <option>club</option> <option>comedy</option> <option>country</option> <option>dance</option> <option>dancehall</option> <option>death-metal</option> <option>deep-house</option> <option>detroit-techno</option> <option>disco</option> <option>disney</option> <option>drum-and-bass</option> <option>dub</option> <option>dubstep</option> <option>edm</option> <option>electro</option> <option>electronic</option> <option>emo</option> <option>folk</option> <option>forro</option> <option>french</option> <option>funk</option> <option>garage</option> <option>german</option> <option>gospel</option> <option>goth</option> <option>grindcore</option> <option>groove</option> <option>grunge</option> <option>guitar</option> <option>happy</option> <option>hard-rock</option> <option>hardcore</option> <option>hardstyle</option> <option>heavy-metal</option> <option>hip-hop</option> <option>holidays</option> <option>honky-tonk</option> <option>house</option> <option>idm</option> <option>indian</option> <option>indie</option> <option>indie-pop</option> <option>industrial</option> <option>iranian</option> <option>j-dance</option> <option>j-idol</option> <option>j-pop</option> <option>j-rock</option> <option>jazz</option> <option>k-pop</option> <option>kids</option> <option>latin</option> <option>latino</option> <option>malay</option> <option>mandopop</option> <option>metal</option> <option>metal-misc</option> <option>metalcore</option> <option>minimal-techno</option> <option>movies</option> <option>mpb</option> <option>new-age</option> <option>new-release</option> <option>opera</option> <option>pagode</option> <option>party</option> <option>philippines-opm</option> <option>piano</option> <option>pop</option> <option>pop-film</option> <option>post-dubstep</option> <option>power-pop</option> <option>progressive-house</option> <option>psych-rock</option> <option>punk</option> <option>punk-rock</option> <option>r-n-b</option> <option>rainy-day</option> <option>reggae</option> <option>reggaeton</option> <option>road-trip</option> <option>rock</option> <option>rock-n-roll</option> <option>rockabilly</option> <option>romance</option> <option>sad</option> <option>salsa</option> <option>samba</option> <option>sertanejo</option> <option>show-tunes</option> <option>singer-songwriter</option> <option>ska</option> <option>sleep</option> <option>songwriter</option> <option>soul</option> <option>soundtracks</option> <option>spanish</option> <option>study</option> <option>summer</option> <option>swedish</option> <option>synth-pop</option> <option>tango</option> <option>techno</option> <option>trance</option> <option>trip-hop</option> <option>turkish</option> <option>work-out</option> <option>world-music</option>
+</select>
+<br><br>
+  How many songs do you want? <input type="number" name="yourId" /> <br><br>
+  How popular do you want your songs? <select id="mySelect">
+  <option>Any</option>
+  <option>Popular</option>
+  <option>Obscure</option>
+</select> <br><br>
+Are you looking for acoustic music? <select id="mySelect">
+  <option>Any</option>
+  <option>Yes</option>
+  <option>No</option>
+</select> <br><br> 
+Are you looking for energetic music? <select id="mySelect">
+  <option>Any</option>
+  <option>Yes</option>
+  <option>No</option>
+</select> <br><br>
+Are you looking for danceable music? <select id="mySelect">
+  <option>Any</option>
+  <option>Yes</option>
+  <option>No</option>
+</select> <br><br>
+
+</form> 
+<br>
+<button onclick="getSongs()">Submit</button>
+
+<p id="demo"></p>
+    </div>
+
+    <div class="books">
+      <h2 class="subheading">Books</h2>
+      <container class="booksContainer"></container><br>
+      <button class="booksButton">Click Me!</button>
+
+      <iframe src="https://trinket.io/embed/python/5986da4c5e?outputOnly=true&start=result" width="30%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+    </div>
+
+</body>
+</html>
