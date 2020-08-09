@@ -3,8 +3,10 @@ import json
 
 # SETTINGS 
 endpoint_url = "https://api.spotify.com/v1/recommendations?"
-token = "BQBCmK_h_-Vrlsh7FPOAYKza5f2wu5SiRSjkj2ld1DLKFodb1pJ7Gg3wsssMb7p2VibYLWWqYwpBGZHPx0KtG5COOsye4hYTvsGWM-IU1DLr4K-W0bHVA-nQcq2gFs5MRGo2WCv6DmTYRt5KWiewXu4NXbOQsVPsmq8ucwLMqhAxYpIeIoL7w6gnL5gc57jsDw"
+token = "BQBUHGFVnD_b971wXRAcAEbyQRYEEaVF4BAA6FF-uDkvbrC6qzgRfk6YzVQxqSpcCWeO2-Zb5tmzlFOkg0xzPDqAlruE9Kibnq6utWFn3TbsALXyN-tfOtHoiRoxBu9oe5anrqMcuuqIXRar3f1EpxuYfIogEDWACoQ6iVjENAgc9pUw5DSlQ89nn45q26Zt8w"
 user_id = "2n0kmrh6wf1maecevkn7o5wdv"
+market="US"
+uris = [] 
 
 
 def createPlaylists(limit, genre, targPop, targEner, targAco, targDan):
